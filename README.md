@@ -9,7 +9,7 @@
 
 ## How the Pipeline Works
 
-###Tools 
+### Tools 
 | AWS  |
 | ------------- | 
 | RDS  | 
