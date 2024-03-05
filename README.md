@@ -5,13 +5,14 @@
 ## Overview
 * Extracts and transform crypto data with Python from CoinCap Api 
 * Data is loaded into AWS S3 and then transferred to an AWS RDS Postgres instance and then rendered by Metabase
-* Python code runs on a schedule cron job through a virtual machine with AWS EC2
+* Python code runs on a scheduled Cloudwatch event which trigger AWS Lambda function call every 5 minutes
 
 ## How the Pipeline Works
 
-### Tools 
-| AWS  |
-| ------------- | 
-| RDS  | 
-| S3  |
-|EC2|
+### Tools  
+| AWS  | API | Visualization |
+| -----|------- | ----- |
+| RDS  | CoinCap | Metabase|
+| S3  | | Docker |
+|EC2| | |
+|Lambda| | |
