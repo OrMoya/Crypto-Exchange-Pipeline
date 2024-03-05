@@ -8,7 +8,7 @@
 * Python code runs on a scheduled Cloudwatch event which trigger AWS Lambda function call every 5 minutes
 
 # Important Links
-* [Visualization](http://54.215.90.183:3000/public/dashboard/2267c6ea-e60f-4c59-9e98-b3d673c1df3e)
+* [Visualization](http://52.9.82.201:3000/public/dashboard/2267c6ea-e60f-4c59-9e98-b3d673c1df3e)
 
 ## How the Pipeline Works
 
