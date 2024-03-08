@@ -8,10 +8,14 @@
 * Python code runs on a scheduled Cloudwatch event which trigger AWS Lambda function call every 5 minutes
 
 # Important Links
-* [Visualization](http://52.9.82.201:3000/public/dashboard/2267c6ea-e60f-4c59-9e98-b3d673c1df3e)
+* [Visualization](https://dashboard.orlandomoya.com/public/dashboard/691a60a6-cb3c-474e-8062-55061ec21e9f)
 
 ## How the Pipeline Works
-
+1. A CloudWatch event triggers `lambda_function.py` to run every 2 hours.
+2. `lambda_function.py` calls `etl_extract.py` which pulls data from CoinCap api.
+3. Data is loaded to a S3 bucket and then `etl_load.py` transfroms and loads the data to a Postgres instance on RDS.
+4. A Metabase instance running on a VM hosted by EC2 displays the data on a dashboard.
+   
 ### Tools  
 | AWS  | API | Visualization |
 | -----|------- | ----- |
