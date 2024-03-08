@@ -5,7 +5,7 @@
 ## Overview
 * Extracts and transform crypto data with Python from CoinCap Api 
 * Data is loaded into AWS S3 and then transferred to an AWS RDS Postgres instance and then rendered by Metabase
-* Python code runs on a scheduled Cloudwatch event which trigger AWS Lambda function call every 5 minutes
+* Python code runs on a scheduled Cloudwatch event which trigger AWS Lambda function call every 2 hours
 
 # Important Links
 * [Visualization](https://dashboard.orlandomoya.com/public/dashboard/691a60a6-cb3c-474e-8062-55061ec21e9f)
